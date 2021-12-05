@@ -1,5 +1,6 @@
 body {
-   font-family: 'Roboto', sans-serif;   
+   font-family: 'Roboto', sans-serif;
+   margin: 16px;   
 }
 
 #siteContent {
@@ -39,12 +40,16 @@ nav li {
     padding: 5px 10px;
     border-radius: 20px;
     float: right;
-display:inline;
+    display:inline;
 }
 
 .button p {
     color: whitesmoke;
     margin: 0%;
+}
+
+#navMenu {
+    display:none;
 }
 
 /* MAIN */
@@ -72,6 +77,13 @@ display:inline;
     margin-right: 80px;
 }
 
+#heroButton {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    right: 20px; 
+}
+
 /* FEATURES */
 
 .feature {
@@ -80,17 +92,28 @@ display:inline;
 } 
 
 .leftBox {
-    max-width: 500px;
+    max-width: 50%;
     margin-right: 20px
 }
 
-#image1 {
-    background-image: url("./EUFoto.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width:100%
+.feature img {
+    max-width: 50%;
+    max-height: 350px;
 }
+
+.feature p {
+    text-align: justify;
+}
+
+.feature .button {
+    margin-bottom: 20px;
+}
+ 
+  .rightBox {
+      max-width: 50%;
+      margin-left: 20px
+  }
+  
 
 /* FOOTER */
 
@@ -98,3 +121,54 @@ footer nav {
     margin-top: 80px;
     justify-content: center;
 } 
+
+/* RESPONSIVE */
+
+
+@media only screen and (max-width: 740px) {
+    #company, #useCases {
+        display: none;
+    }    
+}   
+
+@media only screen and (max-width: 600px) {
+   
+    #navMenu {
+        display: block;
+        margin-top: 16px;
+    }
+    
+    #heroButton {
+        display: block;
+    }    
+
+    #startNow {
+        display: none;
+    }   
+    
+    
+    .topNav {
+        display: none;
+    }
+
+       .lefthanded {
+        flex-direction: column;
+    }
+
+    .righthanded {
+        flex-direction: column-reverse;
+    }
+
+    .leftBox {
+        max-width: 100%;
+    }
+
+    .rightBox {
+        max-width: 100%;
+    }
+
+    .feature img  {
+        max-width:100%;
+    }
+
+}   
