@@ -133,6 +133,10 @@ footer nav {
 
 @media only screen and (max-width: 600px) {
    
+    #hero h1 {
+        font-size: 1.5rem;
+    }
+
     #navMenu {
         display: block;
         margin-top: 16px;
