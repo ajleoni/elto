@@ -1,0 +1,93 @@
+body {
+   font-family: 'Roboto', sans-serif;   
+}
+
+#siteContent {
+    max-width: 1080px;
+    margin:0 auto;
+}
+
+/* NAVIGATION */
+
+.logo {
+font-family: 'Righteous', cursive ;
+font-weight: bold;
+font-size: 2.5rem;
+margin: 0;
+}
+
+.russo {
+    font-family: 'Russo One', sans-serif;    
+}
+
+nav {
+    display:flex;
+    justify-content: space-between;
+}
+
+nav li {
+    display: inline;
+    margin: 0px 10px;
+}
+
+#startNow {
+    padding-top: 10px;
+}
+
+.button {
+    background-color: rgb(31, 162, 223);
+    padding: 5px 10px;
+    border-radius: 20px;
+    float: right;
+display:inline;
+}
+
+.button p {
+    color: whitesmoke;
+    margin: 0%;
+}
+
+/* MAIN */
+
+#hero {
+    position: relative;
+}
+
+#mainBanner {
+    background-image: url("./hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+#hero h1 {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    color: whitesmoke;
+    font-size: 2rem;
+    font-family: 'Russo One', sans-serif;
+    max-width: 600px;
+    margin-right: 80px;
+}
+
+/* FEATURES */
+
+.feature {
+  display: flex;
+  margin-top: 20px;  
+} 
+
+.leftBox {
+    max-width: 500px;
+    margin-right: 20px
+}
+
+#image1 {
+    background-image: url("./EUFoto.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%
+}
