@@ -91,3 +91,10 @@ display:inline;
     background-repeat: no-repeat;
     width:100%
 }
+
+/* FOOTER */
+
+footer nav {
+    margin-top: 80px;
+    justify-content: center;
+} 
