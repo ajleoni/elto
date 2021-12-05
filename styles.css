@@ -117,10 +117,28 @@ nav li {
 
 /* FOOTER */
 
-footer nav {
-    margin-top: 80px;
+footer {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
+    max-width:600px;
 } 
+
+footer ul {
+    display:flex;
+    justify-content: space-between;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-items: start;
+}
+
+footer li {
+    min-width: 100px;
+    display: inline;
+    margin: 10px 10px;
+}
+
 
 /* RESPONSIVE */
 
@@ -135,6 +153,8 @@ footer nav {
    
     #hero h1 {
         font-size: 1.5rem;
+        top: 40px;
+        left: 40px;
     }
 
     #navMenu {
