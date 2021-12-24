@@ -10,47 +10,6 @@ body {
 
 /* NAVIGATION */
 
-.logo {
-font-family: 'Righteous', cursive ;
-font-weight: bold;
-font-size: 2.5rem;
-margin: 0;
-}
-
-.russo {
-    font-family: 'Russo One', sans-serif;    
-}
-
-nav {
-    display:flex;
-    justify-content: space-between;
-}
-
-nav li {
-    display: inline;
-    margin: 0px 10px;
-}
-
-#startNow {
-    padding-top: 10px;
-}
-
-.button {
-    background-color: rgb(31, 162, 223);
-    padding: 5px 10px;
-    border-radius: 20px;
-    float: right;
-    display:inline;
-}
-
-.button p {
-    color: whitesmoke;
-    margin: 0%;
-}
-
-#navMenu {
-    display:none;
-}
 
 /* MAIN */
 
@@ -77,12 +36,17 @@ nav li {
     margin-right: 80px;
 }
 
-#heroButton {
-    display: none;
-    position: absolute;
-    bottom: 20px;
-    right: 20px; 
+.button {
+    background-color: rgb(31, 162, 223);
+    border-radius: 1rem;
+    display: inline-block;
 }
+
+.button p {
+        color: whitesmoke;
+        margin: 0%;
+        padding: 0.5rem 1rem;
+    }
 
 /* FEATURES */
 
@@ -142,13 +106,6 @@ footer li {
 
 /* RESPONSIVE */
 
-
-@media only screen and (max-width: 740px) {
-    #company, #useCases {
-        display: none;
-    }    
-}   
-
 @media only screen and (max-width: 600px) {
    
     #hero h1 {
@@ -157,25 +114,7 @@ footer li {
         left: 40px;
     }
 
-    #navMenu {
-        display: block;
-        margin-top: 16px;
-    }
-    
-    #heroButton {
-        display: block;
-    }    
-
-    #startNow {
-        display: none;
-    }   
-    
-    
-    .topNav {
-        display: none;
-    }
-
-       .lefthanded {
+    .lefthanded {
         flex-direction: column;
     }
 

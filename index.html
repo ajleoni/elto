@@ -3,34 +3,36 @@
 <html>
 <head>
     <title>ELTO - The infrastructure of commerce</title>
+    <link href='./nav.css' rel='stylesheet'>
+    <link href='./utils.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-   </head>
+    <script src="./nav.js" defer></script>
+  </head>
   <body>
     <div id="siteContent">
-      <nav>
+      <header class="flex">
         <div id="logoBox"><p class="logo">elto</p></div>
-        <div class="navLinks topNav">
-          <ul>
-            <li><a>Products</a></li>
-            <li id="useCases"><a>Use Cases</a></li>
-            <li><a>Developers</a></li>
-            <li id="company"><a>Company</a></li>
-            <li><a>Pricing</a></li>
-          </ul>
-        </div>
-        <div id="startNow">
-          <div class="button"><p><a>Start Now</a></p></div>
-        </div>
-        <div id="navMenu"><a><img src="./menu_icon.svg"></a></div>
-      </nav>
+        <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+        </button>
+        <nav>
+            <ul id="top-navigation" class="top-navigation flex" data-visible="false">
+                <li><a href="./projects.html">Products</a></li>
+                <li><a href="./interests.html">Use Cases</a></li>
+                <li><a href="./others.html">Developers</a></li>
+                <li><a href="./others.html">Pricing</a></li>
+            </ul>
+          </nav>
+          <div id="startNow"><p><a>Start Now</a></p>
+          </div>
+      </header>
       <main>
         <section id="hero">
           <div id="mainBanner"></div>
           <h1>The electronic Invoicing API you have always wanted</h1>
-          <div class="button" id="heroButton"><p><a>Start Now</a></p></div>
         </section>
         <section class="feature lefthanded">
           <div class="leftBox">
