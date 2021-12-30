@@ -18,26 +18,41 @@ header {
     }
 
 #startNow p {
-        color: whitesmoke;
+        color: white;
         margin: 0%;
         padding: 0.5rem 1rem;
     }
    
 
+
 .top-navigation {
     list-style: none;
     margin: 0;
     padding: 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-family: 'Russo One', sans-serif;
 }
 
 .top-navigation a {
     text-decoration: none;
     color: black;
+    padding-right: 1rem;
 }
+
+.top-navigation span {
+    margin-inline-end: 0.5rem;
+    color: darkred;
+}
+
 
 .nav-toggle {
     display: none;
+}
+
+@media (max-width: 60rem) {
+    .top-navigation span {
+        display: none;
+    }
 }
 
 @media (max-width: 50rem) {
@@ -54,6 +69,13 @@ header {
         z-index: 1001;
     }
     
+
+    .top-navigation span {
+        display: inline;
+        color:lightcoral;
+    }
+
+
     #startNow {
         position: absolute;
         top: 20rem;
@@ -67,6 +89,7 @@ header {
             background: hsl( 0 0% 0% / 0.1);
         }
     }
+
  
     .top-navigation a {
         color: white;
