@@ -66,6 +66,7 @@ header {
         transition: transform 350ms ease-out;
         background: hsl( 0 0% 0% / 0.50);
         backdrop-filter: blur(16px); 
+        -webkit-backdrop-filter: blur(16px); 
         z-index: 1001;
     }
     
